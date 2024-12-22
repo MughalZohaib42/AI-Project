@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+:root {
+    --background-color: #64646e;
+    --header-bg-color: #000000;
+    --font-color: #FFFF;
+    --font-size: 20px;
+    --font-weight: 800;
+    --hover-button: #3b4fa5;
+}
+
+header {
+    margin-bottom: 30px;
+    background-color: var(--header-bg-color);
+    color: var(--font-color);
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    font-size: var(--font-size);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding: 20px;
+}
+
+.simpleform {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--font-color);
+}
+
+.simpleform input {
+    padding: 10px;
+}
+
+.form-button button {
+    padding: 10px 40px;
+    cursor: pointer;
+
+}
+
+.div-button button {
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--font-color);
+    background-color: var(--hover-button);
+}
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.form-div {
+    margin-top: 5%;
+    background-color: var(--font-color);
+    max-width: 25%;
+    height: 35vh;
+
+}
+
+.edit {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+#graph-container {
+    position: relative;
+    border: 2px solid var(--header-bg-color);
+}
+
+#TREE {
+    color: var(--font-color);
+    text-align: center;
+}
+
+#PATH {
+    color: var(--font-color);
+    text-align: center;
+}
+
+#ucs-queue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--font-color);
+    width: 15%;
+    text-align: center;
+    height: 40vh;
+    margin-top: 5%;
+
+}
+
+#ucs-List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ucs-List li {
+    background-color: var(--font-color);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.graph-draw {
+    padding-top: 50px;
+}
+
+.sorted-graph {
+    border-top: 1px solid var(--header-bg-color);
+    margin-top: 20px;
+}

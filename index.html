@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Artifical Intelligence Assignment No 1</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>BFS DFS UCS GRAPH TRAVERSAL</h1>
+    </header>
+
+    <main>
+        <div class="form-div">
+            <h2 class="edit">Graph Edit</h2>
+            <form class="simpleform">
+                <input type="text" placeholder="START NODE" id="f-node">
+                <input type="text" placeholder="END NODE" id="n-node">
+                <input type="number" placeholder="COST" id="cost">
+
+                <div class="form-button">
+                    <button type="button" id="bfs-button">BFS</button>
+                    <button type="button" id="dfs-button">DFS</button>
+                    <button type="button" id="startucs">UCS</button>
+                </div>
+
+                <div class="div-button">
+                    <button type="button" id="submit">ADD EDGE</button>
+                    <button type="button" id="resetButton">RESET</button>
+                </div>
+
+            </form>
+        </div>
+        <div id="graph-container">
+            <h2 id="TREE">GRAPH</h2>
+            <canvas id="mainCanvas" width="900" height="400"></canvas>
+            <div class="sorted-graph">
+                <h2 id="PATH">PATH</h2>
+                <canvas id="sortedCanvas" width="800" height="200"></canvas>
+            </div>
+        </div>
+
+        <div id="ucs-queue">
+            <h2>shortest path</h2>
+            <ul id="ucs-List"></ul>
+        </div>
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
